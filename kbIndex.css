@@ -1,0 +1,347 @@
+/* Styles for Knowledge Base
+Author: Miles Exner
+Date: 5/15/2016
+*/
+
+body {
+    font-family: arial, helvetica, verdana, tahoma, sans-serif;
+    }
+
+#nav li a:link {
+    color:white !important;
+    text-decoration:none !important;
+}
+
+#nav li a:visited {
+    color:#fff !important;
+    text-decoration:none !important;
+}
+
+a.fg-menu-crumb:visited {
+    color:#fff !important;
+    text-decoration:none !important;
+}
+
+a.fg-menu-crumb:link {
+    color:#fff !important;
+    text-decoration:none !important;
+}
+
+li.fg-menu-all-lists a:link {
+    color:#fff !important;
+    text-decoration:none !important;
+}
+
+li.fg-menu-all-lists a:visited
+{
+    color:#fff !important;
+    text-decoration:none !important;
+}
+
+.fg-menu-breadcrum li a:link
+{
+    color:#fff !important;
+    text-decoration:none !important;
+}
+
+.top {
+    background: none repeat-x 0 0 #336699;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;  
+    text-align: center;
+}
+
+.mid {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.smalls {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    display: none;
+    margin: 0 auto;
+}
+
+h1 {
+    color:ghostwhite;
+    font-size:1.5em;
+    padding-left:10px;
+    text-align: center;
+}
+
+img {
+    padding: 0;
+}
+
+
+.top {
+    background: none repeat-x scroll 0 0 #336699; 
+    overflow: visible;
+    width: 100%;
+    font-size: 1em;
+    margin: 0 auto;
+    position: fixed;
+    left:0;
+    top: 0;
+    height: 4em;
+    z-index: -1;
+}
+
+.menu {
+    background: none repeat-x scroll 0 0 #336699; 
+    overflow: visible;
+    width: 20em;
+    font-size: 1em;
+    display: inline-block;
+    margin: 0 auto;
+    position: fixed;
+    left:0;
+    top: .1em;
+    height: 3em;
+    z-index: -1;
+    padding: 12px 0px 0px 0;
+}
+
+#menu {
+    width: auto;
+}
+
+.inner {
+    background: none repeat-x scroll 0 0 #336699;
+    position: fixed;
+    right: 2%;
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
+    height: 4em;
+    z-index:-1;
+}
+
+#nav {
+    text-align: left;
+    width: auto;
+}
+
+#nav, .nav, #nav .nav li, { 
+    padding:0;
+    font-size:1em;
+    width: auto;
+}
+
+.tutorial {
+    width: 100%;
+    overflow: visible;
+    background: none repeat-x scroll 0 0 #336699; 
+}
+
+#tipue_search_content
+{
+    position: relative;
+}
+
+#tipue_search_content a
+{
+    color:blue !important;
+}
+
+#DisplayDiv {
+
+    background: #fff;
+    position: absolute;   
+    top: 4.1em;
+    display: block;
+    clear:both;
+    z-index: -2;
+    width: auto;
+    white-space: normal;
+    margin-left: 15%;
+    margin-right: 10%;
+     
+}
+
+#DisplayDiv table{
+    width:auto;
+    height:auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#DisplayDiv img{
+    width:auto;
+    max-width: 100%;
+    height:auto; 
+}
+
+div.menu a:visited {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+div.menu a:link {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width:959px) {
+    #DisplayDiv {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #Welcome {
+        margin-left: 10%;
+        margin-right: 10%;
+    }    
+}
+
+@media only screen and (max-width: 879px)
+{
+    .mid {
+        display: none
+    }
+    .smalls {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:555px) {
+    #DisplayDiv {
+        margin-left: 5%;
+        margin-right: 5%;
+        top: 8em;
+    }
+
+    .inner {
+            position: absolute;
+            left: 1.5em;
+            right: auto;
+            top: 0px;
+            overflow: visible;
+    }
+    .top
+    {
+        height: 8em;
+        text-align: right;
+    }
+    .menu {
+        top: 3em;
+    }
+    .mid {
+        display: none;
+    }
+    .smalls {
+        display: inline-block;
+        top: 20px;
+        right: 10%;
+    }
+}
+
+
+@media only screen and (max-width:480px) {
+    #DisplayDiv {
+        margin-left: 2%;
+        margin-right: 2%;
+        top: 8em;
+    }
+    .in
+    .inner {
+            position: absolute;
+            left: 1.5em;
+            right: auto;
+            top: 0px;
+            overflow: visible;
+    }
+    .top
+    {
+        height: 8em;
+        text-align: right;
+    }
+    .menu {
+        top: 3em;
+    }
+    .mid {
+        display: hidden;
+    }
+    .smalls {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    #DisplayDiv {
+        margin-left: 2%;
+        margin-right: 2%;
+        top: 8em;
+    }
+    .in
+    .inner {
+            position: absolute;
+            left: 1.5em;
+            right: auto;
+            top: 0px;
+            overflow: visible;
+    }
+    .top
+    {
+        height: 8em;
+    }
+    .menu {
+        top: 3em;
+    }
+    .mid {
+        display: none;
+    }
+    .smalls {
+        display: inline-block;
+        right: 4%;
+    }
+}
+
+
+
+/*Search form top padding*/
+
+form {
+    padding-top: 8px;
+}
+
+/*Menu Container Height and Width Options*/
+.fg-menu-container
+{
+    width: 16em !important;
+    height: auto !important;
+    top: 3em !important;
+    height: auto !important;
+    position: fixed !important;
+}
+
+.fg-menu-ipod
+{
+    height: auto !important;
+}
+
+/*Extra Styling for FG.MENU Script*/
+
+	body {  margin:0; padding:0; }
+	#menuLog { font-size:1.4em; margin:20px; }
+	.hidden { position:absolute; top:0; left:-9999px; width:1px; height:1px; overflow:hidden; }
+	
+	.fg-button { clear:left; margin:0 4px 40px 20px; padding: .4em 1em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
+	.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+	a.fg-button { float:left;  }
+	button.fg-button { width:auto; overflow:visible; } /* removes extra button width in IE */
+	
+	.fg-button-icon-left { padding-left: 2.1em; }
+	.fg-button-icon-right { padding-right: 2.1em; }
+	.fg-button-icon-left .ui-icon { right: auto; left: .2em; margin-left: 0; }
+	.fg-button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; }
+	.fg-button-icon-solo { display:block; width:8px; text-indent: -9999px; }	 /* solo icon buttons must have block properties for the text-indent to work */	
+	
+	.fg-button.ui-state-loading .ui-icon { background: url(spinner_bar.gif) no-repeat 0 0; }

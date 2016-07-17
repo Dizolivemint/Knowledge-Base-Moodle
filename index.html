@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!Knowledge Base for Pacific College of Oriental Medicine
+Author: Miles Exner
+Date: 5/15/2016
+
+1. To modify the menu, scroll down to comment #2.
+
+>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Knowledge Base</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script type="text/javascript" src="script/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="fg.menu.js"></script>
+    <script type="text/javascript" src="script/divload.js"></script>
+    
+    <link type="text/css" href="fg.menu.css" media="screen" rel="stylesheet" />
+    <link type="text/css" href="script/jquery-ui.min.css" media="screen" rel="stylesheet" />
+    <link type="text/css" href="kbIndex.css" media="screen" rel="stylesheet" />
+    <link href="tipuesearch/tipuesearch.css" rel="stylesheet">	
+    
+    <script src="tipuesearch/tipuesearch_content.js"></script>
+    <script src="tipuesearch/tipuesearch_set.js"></script>
+    <script src="tipuesearch/tipuesearch.min.js"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#DisplayDiv").load("home.html");
+        $('#tipue_search_input').tipuesearch();
+        
+    	// BUTTONS
+    	$('.fg-button').hover(
+    		function(){ $(this).removeClass('ui-state-default').addClass('ui-state-focus'); },
+    		function(){ $(this).removeClass('ui-state-focus').addClass('ui-state-default'); }
+    	);
+    	// MENUS    	
+		
+		$('#hierarchy').menu({
+			content: $('#hierarchy').next().html(),
+			crumbDefaultText: ' ',
+            backLink: false
+		});
+		
+    });
+    </script>
+
+</head>
+
+<body>
+    <div class="top"><div class="mid"><a href="index.html"><img src="images/logo%20400px.png"></a></div><div class="smalls"><a href="index.html"><img src="images/logo_small.png"></a></div>
+<div class="inner">
+<form id="search" action="search.html">
+    <span style="color:#fff;"></span><input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+</form>
+</div>
+<div class="menu">
+<a tabindex="0" href="#docs" class="fg-button fg-button-icon-right ui-widget ui-state-default" id="hierarchy"><span class="ui-icon ui-icon-triangle-1-s"></span>Knowledge Base Articles</a>
+<div id="docs" class="hidden">
+    <ul id="nav">
+        
+        
+        <! 2. ADD/MODIFY/REMOVE Knowledge Base Menu Items. Follow the structure below>
+        
+        
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Faculty Topics</a>
+                    <ul>
+                        <li><a href="#">Adobe Connect</a>
+                            <ul>
+                                <li><a href="Adobe%20Documents/AskandAcceptAttendeeQuestions.html">Raise your Hand</a></li>
+                                <li><a href="Adobe%20Documents/editadobename.html">Edit your Name</a></li>
+                                <li><a href="Adobe%20Documents/HowtoAdjustSpeakeran%20MicVolume.html">Adjust your Volume</a></li>
+                                <li><a href="Adobe%20Documents/HowtoShareWebcam.html">Share your Webcam</a></li>
+                                <li><a href="Adobe%20Documents/SetAdobeMeeting%20oomtofullscreen.html">How to Zoom</a></li>
+                                <li><a href="http://www.adobe.com/support/connect/downloads-updates.html">Adobe Connect Meeting Add-ins</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Quizzes</a>
+                            <ul>
+                                <li><a href="Faculty/Quizzes/Adjust_settings_to_allow_students_to_review_answers.html">Adjust settings to allow students to review answers</a></li>
+                                <li><a href="Faculty/Quizzes/Delete_Attempts_Extend_Dates_Time_Allow_Retakes_for_Individual_Students.html">Delete Attempts, Extend Dates/Time, Allow Retakes for Individual Students</a></li>
+                                <li><a href="Faculty/Quizzes/%Quiz_Attempts_and_Quiz_Statistics.html">Review Quiz Attempts and Quiz Statistics</a></li>
+                                <li><a href="Faculty/Quizzes/How_to_Delete_a_Quiz_Attemp.html">How to Delete a Quiz Attempt</a></li>
+                                <li><a href="http://elearning.pacificcollege.edu/mod/page/view.php?id=68452">How to Change Quiz Settings</a></li>
+                                <li><a href="Faculty/Quizzes/How_to_Set_Up_a_Quiz_in_Moodle.html">How to Set Up a Quiz in Moodle</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Gradebook</a>
+                            <ul>
+                                <li><a href="#">Rubrics</a>
+                                    <ul>
+                                        <li><a href="http://elearning.pacificcollege.edu/mod/page/view.php?id=58052">Writing a Grading Rubric</a></li>
+                                        <li><a href="Faculty/Grades/Grading_Rubrics-Changing_editing_or_deleting_a_rubric.docx">Changing, Editing, or Deleting</a></li>
+                                        <li><a href="Faculty/Grades/Grading_Rubrics-Adding_a_rubric_from_a_template%20.html">Adding from a Template</a></li>
+                                        <li><a href="Faculty/Grades/Grading_Rubrics-Adding_a_new_rubric_from_scratch.html">Adding from Scratch</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Faculty/Grades/%20Final_grades_not_displaying.html">Final grades not displaying</a></li>
+                                <li><a href="Faculty/Grades/How_to_Find_a_Dropped_Students_Grade.html">How to Find a Dropped Student's Grade</a></li>
+                                <li><a href="Faculty/Grades/Gradebook_is_Not_Calculating_Correctly.html">Gradebook is Not Calculating Correctly</a></li>
+                                <li><a href="Faculty/Grades/I_cannot_change_the_grade.html">Moodle Won't Let Me Change the Grade</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Assignments</a>
+                            <ul>
+                                <li><a href="Faculty/Assigments/AllowChangesResubmission.html">Allow Changes/Resubmissions</a></li>
+                                <li><a href="Faculty/Assigments/DraftVsSubmission.html">"Draft (not submitted)" vs. "Submitted for Grading"</a></li>
+                                <li><a href="Faculty/Assigments/How_to_Set_Assignment_Due_Dates.html">Set Assignment Due Dates</a></li>
+                                <li><a href="Faculty/Assigments/Extend_an_assignment_due_date.html">Extend an Assignment Due Date for a Student</a></li>
+                                <li><a href="Faculty/Assigments/WhenITryToUpdateStudents.html">Update or Change the Assignment Grade</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Courses</a>
+                            <ul>
+                                <li><a href="Faculty/Courses/Import_items_from_a_previous_class_to_a_new_class.html">Import Items From a Previous Class to a New Class</a></li>
+                                <li><a href="Faculty/Courses/How_to_Add_Section_Name_to_Course_Homepage.html">Add the Section Name to the Course Home Page</a></li>
+                                <li><a href="Faculty/Courses/How_to_Upload_Syllabus.html">Upload the Syllabus to My Course</a></li>
+                                <li><a href="Faculty/Courses/AttendanceinCampusVue.html">Attendance in Campus Vue</a></li>
+                                <li><a href="Faculty/Courses/hhideunhidetml.html">Hide/Unhide Items on the Course Home Page</a></li>
+                                <li><a href="Faculty/Courses/How_to_Share_a_Video.html">Share a Video</a></li>
+                                <li><a href="Faculty/Courses/Navigating_an_eLearning_Course.html">Navigating an eLearning Course</a></li>
+                                <li><a href="Faculty/Courses/createfolderandfiles.html">Create a Folder and Add Files to It</a></li>
+                                <li><a href="Faculty/Courses/How_to_Add_a_File_Directly_to_a_Content_Area_in_Moodle.html">Add a File Directly to a Content Area in Moodle</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Discussion Forums</a>
+                            <ul>
+                                <li><a href="Faculty/Forums/%20How_to_Close_a_Forum_and_Prevent_Further_Student_Posts.html">Close a Forum and Prevent Further Student Posts</a></li>
+                                <li><a href="Faculty/Forums/Using_the_Joule_Grader_to_Grade_Forums.html">Using the Joule Grader to Grade Forums</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Faculty Resources</a>
+                            <ul>
+                                <li><a href="http://elearning.pacificcollege.edu/course/view.php?id=869">Faculty Orientation to Pacific College eLearning (FOM1)</a></li>
+                                <li><a href="https://en-us.help.blackboard.com/Moodlerooms">Moodle Teacher Manual</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Student Topics</a>
+                    <ul>
+                        <li><a href="#">Adobe Connect</a>
+                            <ul>
+                                <li><a href="Adobe%20Documents/AskandAcceptAttendeeQuestions.html">Raise your Hand</a></li>
+                                <li><a href="Adobe%20Documents/editadobename.html">Edit your Name</a></li>
+                                <li><a href="Adobe%20Documents/HowtoAdjustSpeakeran%20MicVolume.html">Adjust your Volume</a></li>
+                                <li><a href="Adobe%20Documents/HowtoShareWebcam.html">Share your Webcam</a></li>
+                                <li><a href="Adobe%20Documents/SetAdobeMeeting%20oomtofullscreen.html">How to Zoom</a></li>
+                                <li><a href="http://www.adobe.com/support/connect/downloads-updates.html">Adobe Connect Meeting Add-ins</a></li>
+                                <li><a href="https://vimeo.com/user13786602/review/164597228/943742f72b">
+                                    How to use Adobe Connect Add in</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Quizzes</a>
+                            <ul>
+                                <li><a href="Student/Quizzes/RetakeaQuizExam.html">Retake a Quiz/Exam?</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Assignments</a>
+                            <ul>
+                                <li><a href="Student/Assignments/Submit_Assignments_Using_Dropbox_or_Google_Drive.html">Submit Assignments Using Dropbox, Google Drive, or OneDrive</a></li>
+                                <li><a href="Student/Assignments/How_to_Resubmit_or_Change_an_Assignment.html">Resubmit or Change an Assignment</a></li>
+                                
+                                <li><a href="http://elearning.pacificcollege.edu/mod/assign/view.php?id=105668">File Submission Assignments</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Resources</a>
+                            <ul>
+                                 <li><a href="http://elearning.pacificcollege.edu/course/view.php?id=5478" target="_blank">New Student Orientation - Technology and eLearning Video</a></li>
+                                <li><a href="http://elearning.pacificcollege.edu/course/view.php?id=845" target="_blank">Student Orientation to Pacific College eLearning (SOM1)</a></li>
+                        
+                                <li><a href="#">Course Navigation</a>
+                                    <ul>
+                                        <li><a href="Student/Resources/How_to_Find_Syllabi_for_All_Courses.html">Find Syllabi for All Courses</a></li>
+                                        <li><a href="https://www.youtube.com/watch?v=PyA3h34jo0w&index=30&list=PLB3DF4787E26C0E23
+">Navigate a Course Set up Using the Folder Format</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">E-Mail Topics</a>
+                    <ul>
+                        <li><a href="https://support.google.com/mail/answer/21289?hl=en">Check Emails from Other Accounts Using Gmail</a></li>
+                        <li><a href="https://support.office.com/en-us/article/Forward-email-to-another-email-account-1ed4ee1e-74f8-4f53-a174-86b748ff6a0e?ui=en-US&rs=en-US&ad=US">Forward E-Mail from Office 365</a></li>
+                        <li><a href="Resources/MyPCOM-Finding_an_Email_Address.html">Finding an Email Address</a></li>
+                        <li><a href="Resources/Creating_Good_Passwords.html">Creating Secure Passwords</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">General eLearning</a>
+                    <ul>
+                        <li><a href="General/Cannot_access_MyPCOM_or_My_Classes.html">Cannot Access My Classes: Changing Popup Blocker Settings</a></li>
+                        <li><a href="General/Using_Spell_Check_in_the_eLearning_System.html">Using Spell Check in the eLearning System</a></li>
+                        <li><a href="General/How_to_Zip_or_Compress_Multiple_Files_into_One.html">How to Zip or Compress Multiple Files into One</a></li>
+                        <li><a href="General/Set_the_Time_Zone_in_Pacific_College_eLearning.html">How to set the Time Zone in Pacific College eLearning</a></li>
+                        <li><a href="General/Netiquette.html">Netiquette</a></li>
+                        <li><a href="General/Update_Your_Online_Profile.html">Update Your Online Profile</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FireFox Browser Issues</a>
+                    <ul>
+                        <li><a href="FireFox/Copy_and_Paste_in_Firefox.html">Copy and Paste in Firefox Won't Work</a></li>
+                        <li><a href="FireFox/Do_I_have_to_use_Firefox.html">Do I have to use Firefox?</a></li>
+                        <li><a href="FireFox/Reset_Browser_History.html">How to Reset Your Browser History</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#">Office 365 Features</a>
+                    <ul>
+                            <li><a href="http://elearning.pacificcollege.edu/mod/url/view.php?id=108973" target="_blank">Install Micrsoft Office Apps on a Windows</a></li>
+                            <li><a href="http://elearning.pacificcollege.edu/mod/url/view.php?id=108974" target="_blank">Install Micrsoft Office Apps on a Mac</a></li>
+                            <li><a href="http://portal.office.com">Software: Office 365</a></li> 
+                            <li><a href="http://aka.ms/office-2016-training ">Microsoft Office Training</a></li> 
+                            
+                        
+                    </ul>
+                </li>        
+                <li><a href="#">Additional Resources</a>
+                    <ul>
+                        <li><a href="Resources/Support_Ticket_Tip_Taking_a_Screenshot.html">Support Ticket Tip: Taking a Screenshot</a></li>
+                    </ul>
+                </li>
+                
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div id="DisplayDiv"></div>
+</body>
+</html>
