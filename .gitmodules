@@ -1,0 +1,3 @@
+[submodule "jquery-address"]
+	path = jquery-address
+	url = https://github.com/asual/jquery-address
