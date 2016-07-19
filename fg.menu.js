@@ -255,14 +255,26 @@ function Menu(caller, options){
 		menu.kill();
 		// edit this for your own custom function/callback:
 		$('#menuSelection').text($(item).text());	
-		//location.href = $(item).attr('href');
+		
+        
+        
+        //location.href = $(item).attr('href');
         var url = $(item).attr('href');
+        
+        //Take out the Hashtag
+        url = url.substring(1);
+        //$.bbq.removeState();
+        $.bbq.pushState(url, 2);
+        
         //window.alert("Testing: " + url);
-        $("#DisplayDiv").load(url, function( response, status, xhr ) {
+        $(".DisplayDiv").load(url, function( response, status, xhr ) {
             if ( status == "error" ) {
                 location.href=url;
             }
         });
+        
+        $(window).trigger( "hashchange" );
+
         return false;
 	};
 };

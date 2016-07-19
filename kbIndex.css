@@ -152,7 +152,7 @@ img {
     color:blue !important;
 }
 
-#DisplayDiv {
+.DisplayDiv {
 
     background: #fff;
     position: absolute;   
@@ -167,14 +167,14 @@ img {
      
 }
 
-#DisplayDiv table{
+.DisplayDiv table{
     width:auto;
     height:auto;
     border-collapse: collapse;
     table-layout: fixed;
 }
 
-#DisplayDiv img{
+.DisplayDiv img{
     width:auto;
     max-width: 100%;
     height:auto; 
@@ -191,7 +191,7 @@ div.menu a:link {
 }
 
 @media only screen and (max-width:959px) {
-    #DisplayDiv {
+    .DisplayDiv {
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -212,7 +212,7 @@ div.menu a:link {
 }
 
 @media only screen and (max-width:555px) {
-    #DisplayDiv {
+    .DisplayDiv {
         margin-left: 5%;
         margin-right: 5%;
         top: 8em;
@@ -245,7 +245,7 @@ div.menu a:link {
 
 
 @media only screen and (max-width:480px) {
-    #DisplayDiv {
+    .DisplayDiv {
         margin-left: 2%;
         margin-right: 2%;
         top: 8em;
@@ -275,7 +275,7 @@ div.menu a:link {
 }
 
 @media only screen and (max-width:360px) {
-    #DisplayDiv {
+    .DisplayDiv {
         margin-left: 2%;
         margin-right: 2%;
         top: 8em;
