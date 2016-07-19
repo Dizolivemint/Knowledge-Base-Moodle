@@ -261,19 +261,26 @@ function Menu(caller, options){
         //location.href = $(item).attr('href');
         var url = $(item).attr('href');
         
-        //Take out the Hashtag
-        url = url.substring(1);
-        //$.bbq.removeState();
-        $.bbq.pushState(url, 2);
-        
-        //window.alert("Testing: " + url);
-        $(".DisplayDiv").load(url, function( response, status, xhr ) {
+        //Take out the Hashtag if it exists and change the browser url
+        if (url.substring(0,1) == "#") {
+            url = url.substring(1);
+            $.bbq.pushState(url, 2);
+            
+            //window.alert("Testing: " + url);
+            $(".DisplayDiv").load(url, function( response, status, xhr ) {
             if ( status == "error" ) {
                 location.href=url;
             }
         });
         
         $(window).trigger( "hashchange" );
+        } else {
+            window.open(url, "_self");
+        }
+        
+        //$.bbq.removeState();
+        
+        
 
         return false;
 	};
