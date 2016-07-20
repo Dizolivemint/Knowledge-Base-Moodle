@@ -261,9 +261,22 @@ function Menu(caller, options){
         //location.href = $(item).attr('href');
         var url = $(item).attr('href');
         
+        function changeBase(){
+            //Set the root directory of the href
+            var base = $('<base href="' + url + '">');
+        
+            // *** Put base in head
+            $("head").append(base);
+            return true;
+        }
+        
         //Take out the Hashtag if it exists and change the browser url
         if (url.substring(0,1) == "#") {
             url = url.substring(1);
+            
+            
+            //changeBase(); //Set the root directory of the href
+            
             $.bbq.pushState(url, 2);
             
             //window.alert("Testing: " + url);
@@ -271,9 +284,10 @@ function Menu(caller, options){
             if ( status == "error" ) {
                 location.href=url;
             }
+            //base.remove();
         });
         
-        $(window).trigger( "hashchange" );
+        //$(window).trigger( "hashchange" );
         } else {
             window.open(url, "_self");
         }
