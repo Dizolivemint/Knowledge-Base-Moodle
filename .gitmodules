@@ -1,0 +1,6 @@
+[submodule "jquery-address"]
+	path = jquery-address
+	url = https://github.com/asual/jquery-address
+[submodule "jquery-bbq"]
+	path = jquery-bbq
+	url = https://github.com/cowboy/jquery-bbq

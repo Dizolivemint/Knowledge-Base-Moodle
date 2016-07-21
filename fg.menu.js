@@ -255,14 +255,47 @@ function Menu(caller, options){
 		menu.kill();
 		// edit this for your own custom function/callback:
 		$('#menuSelection').text($(item).text());	
-		//location.href = $(item).attr('href');
+		
+        
+        
+        //location.href = $(item).attr('href');
         var url = $(item).attr('href');
-        //window.alert("Testing: " + url);
-        $("#DisplayDiv").load(url, function( response, status, xhr ) {
+        
+        function changeBase(){
+            //Set the root directory of the href
+            var base = $('<base href="' + url + '">');
+        
+            // *** Put base in head
+            $("head").append(base);
+            return true;
+        }
+        
+        //Take out the Hashtag if it exists and change the browser url
+        if (url.substring(0,1) == "#") {
+            url = url.substring(1);
+            
+            
+            //changeBase(); //Set the root directory of the href
+            
+            $.bbq.pushState(url, 2);
+            
+            //window.alert("Testing: " + url);
+            $(".DisplayDiv").load(url, function( response, status, xhr ) {
             if ( status == "error" ) {
                 location.href=url;
             }
+            //base.remove();
         });
+        
+        //$(window).trigger( "hashchange" );
+        } else {
+            window.open(url, "_self");
+        }
+        
+        //$.bbq.removeState();
+        
+        
+
         return false;
 	};
 };
