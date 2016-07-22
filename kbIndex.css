@@ -7,6 +7,9 @@ body {
     font-family: arial, helvetica, verdana, tahoma, sans-serif;
     }
 
+.txt-home {
+    font-size: 20px; font-size: 1.25rem;
+}
 #nav li a:link {
     color:white !important;
     text-decoration:none !important;
