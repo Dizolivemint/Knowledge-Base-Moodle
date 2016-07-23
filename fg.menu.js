@@ -278,14 +278,14 @@ function Menu(caller, options){
             //changeBase(); //Set the root directory of the href
             
             $.bbq.pushState(url, 2);
-            
+            /*
             //window.alert("Testing: " + url);
             $(".DisplayDiv").load(url, function( response, status, xhr ) {
             if ( status == "error" ) {
                 location.href=url;
             }
             //base.remove();
-        });
+        }*/
         
         //$(window).trigger( "hashchange" );
         } else {
