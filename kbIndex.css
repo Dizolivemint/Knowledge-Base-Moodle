@@ -74,7 +74,6 @@ li.fg-menu-all-lists a:visited
 }
 
 h1 {
-    color:ghostwhite;
     font-size:1.5em;
     padding-left:10px;
     text-align: center;
@@ -148,6 +147,9 @@ img {
 #tipue_search_content
 {
     position: relative;
+    margin: 3.125rem;
+    margin: 50px;
+    
 }
 
 #tipue_search_content a
