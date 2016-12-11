@@ -65,7 +65,10 @@ var tipuesearch = {"pages": [
     {"title": "Using Spell Check in the eLearning System", "text": "During a recent update to the Pacific College eLearning system (on December 27, 2013), the spell check tool that was available in the editing tools above the textbox in discussion forums and in online text assignments (such as massage journals) was disabled because its performance was unreliable.", "tags": "", "url": "index.html#General/UsingSpellCheckInELearning.html"}, 
     {"title": "Creating Good Passwords", "text": "Here are some simple tips on creating good passwords.", "tags": "security hijack email hack hacker", "url": "index.html#Resources/CreatingGoodPasswords.html"}, 
     {"title": "Finding an E-Mail Address", "text": "Instructions for Finding Faculty and Student E-Mail Addresses in MyPCOM and Office 365", "tags": "email find locate", "url": "index.html#Resources/MyPCOMFindingEmailAddress.html"}, 
-    {"title": "Support Ticket Tip: Taking a Screenshot", "text": "It is often helpful to include a screenshot when placing a support ticket. This allows the support team to see the page where you had a problem or the error message that popped up. It's very easy.", "tags": "help contact info", "url": "index.html#Resources/TakingScreenshot.html"}   
+    {"title": "Support Ticket Tip: Taking a Screenshot", "text": "It is often helpful to include a screenshot when placing a support ticket. This allows the support team to see the page where you had a problem or the error message that popped up. It's very easy.", "tags": "help contact info", "url": "index.html#Resources/TakingScreenshot.html"},   
+    {"title": "Adobe Connect Test", "text": "This diagnostic test will ensure your computer and network connections are properly configured to provide you with the best possible Adobe Connect meeting experience.", "tags": "speed test bandwith", "url": "http://admin.adobeconnect.com/common/help/en/support/meeting_test.htm"},
+    {"title": "Regrade a Quiz", "text": "There are times you may need to throw out a question or allow other answers after the quiz has been graded.", "tags": "grading delete modify", "url": "index.html#Faculty/Quizzes/QuizRegrade.html"}
+    
 ]};
 
 

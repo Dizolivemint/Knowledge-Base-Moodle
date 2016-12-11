@@ -149,7 +149,7 @@ img {
     position: relative;
     margin: 3.125rem;
     margin: 50px;
-    
+    z-index: -10;
 }
 
 #tipue_search_content a
@@ -245,6 +245,11 @@ div.menu a:link {
         display: inline-block;
         top: 20px;
         right: 10%;
+    }
+    #tipue_search_content
+    {
+    position: relative;
+    margin: 120px 10px 10px 10px;
     }
 }
 
