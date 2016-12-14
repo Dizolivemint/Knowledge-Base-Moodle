@@ -147,9 +147,6 @@ img {
 #tipue_search_content
 {
     position: relative;
-    margin: 3.125rem;
-    margin: 50px;
-    z-index: -10;
 }
 
 #tipue_search_content a
@@ -220,7 +217,7 @@ div.menu a:link {
     .DisplayDiv {
         margin-left: 5%;
         margin-right: 5%;
-        top: 8em;
+        margin-top: 50px;
     }
 
     .inner {
@@ -246,11 +243,6 @@ div.menu a:link {
         top: 20px;
         right: 10%;
     }
-    #tipue_search_content
-    {
-    position: relative;
-    margin: 120px 10px 10px 10px;
-    }
 }
 
 
@@ -258,9 +250,8 @@ div.menu a:link {
     .DisplayDiv {
         margin-left: 2%;
         margin-right: 2%;
-        top: 8em;
+        margin-top: 50px;
     }
-    .in
     .inner {
             position: absolute;
             left: 1.5em;
@@ -288,7 +279,7 @@ div.menu a:link {
     .DisplayDiv {
         margin-left: 2%;
         margin-right: 2%;
-        top: 8em;
+        margin-top: 50px;
     }
     .in
     .inner {
